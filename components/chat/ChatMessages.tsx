@@ -15,7 +15,7 @@ import { ChatItem } from "./ChatItem";
 const DATE_FORMAT = "d MMM yyyy, HH:mm";
 
 type MessageWithMemberWithProfile = Message & {
-  member: Member & {
+  Member: Member & {
     profile: Profile;
   };
 };
@@ -115,7 +115,7 @@ export const ChatMessages = ({
                 key={message.id}
                 id={message.id}
                 currentMember={Member}
-                Member={message.member}
+                Member={message.Member}
                 content={message.content}
                 fileUrl={message.fileUrl}
                 deleted={message.deleted}
