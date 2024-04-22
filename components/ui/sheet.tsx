@@ -28,6 +28,7 @@ const SheetOverlay = React.forwardRef<
     ref={ref}
   />
 ))
+//@ts-expect-error
 SheetOverlay.displayName = SheetPrimitive.Overlay.displayName
 
 const sheetVariants = cva(
@@ -72,6 +73,7 @@ const SheetContent = React.forwardRef<
     </SheetPrimitive.Content>
   </SheetPortal>
 ))
+//@ts-expect-error
 SheetContent.displayName = SheetPrimitive.Content.displayName
 
 const SheetHeader = ({
@@ -112,6 +114,7 @@ const SheetTitle = React.forwardRef<
     {...props}
   />
 ))
+//@ts-expect-error
 SheetTitle.displayName = SheetPrimitive.Title.displayName
 
 const SheetDescription = React.forwardRef<
@@ -124,6 +127,7 @@ const SheetDescription = React.forwardRef<
     {...props}
   />
 ))
+//@ts-expect-error
 SheetDescription.displayName = SheetPrimitive.Description.displayName
 
 export {

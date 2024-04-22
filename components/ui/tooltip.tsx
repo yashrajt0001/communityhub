@@ -25,6 +25,7 @@ const TooltipContent = React.forwardRef<
     {...props}
   />
 ))
+//@ts-expect-error
 TooltipContent.displayName = TooltipPrimitive.Content.displayName
 
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider }

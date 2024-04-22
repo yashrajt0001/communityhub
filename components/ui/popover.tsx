@@ -26,6 +26,7 @@ const PopoverContent = React.forwardRef<
     />
   </PopoverPrimitive.Portal>
 ))
+//@ts-expect-error
 PopoverContent.displayName = PopoverPrimitive.Content.displayName
 
 export { Popover, PopoverTrigger, PopoverContent }

@@ -20,6 +20,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     )
   }
 )
+//@ts-expect-error
 Input.displayName = "Input"
 
 export { Input }

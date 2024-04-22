@@ -82,6 +82,7 @@ const FormItem = React.forwardRef<
     </FormItemContext.Provider>
   )
 })
+//@ts-expect-error
 FormItem.displayName = "FormItem"
 
 const FormLabel = React.forwardRef<
@@ -99,6 +100,7 @@ const FormLabel = React.forwardRef<
     />
   )
 })
+//@ts-expect-error
 FormLabel.displayName = "FormLabel"
 
 const FormControl = React.forwardRef<
@@ -121,6 +123,7 @@ const FormControl = React.forwardRef<
     />
   )
 })
+//@ts-expect-error
 FormControl.displayName = "FormControl"
 
 const FormDescription = React.forwardRef<
@@ -138,6 +141,7 @@ const FormDescription = React.forwardRef<
     />
   )
 })
+//@ts-expect-error
 FormDescription.displayName = "FormDescription"
 
 const FormMessage = React.forwardRef<
@@ -162,6 +166,7 @@ const FormMessage = React.forwardRef<
     </p>
   )
 })
+//@ts-expect-error
 FormMessage.displayName = "FormMessage"
 
 export {

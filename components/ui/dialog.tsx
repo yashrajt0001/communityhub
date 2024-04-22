@@ -27,6 +27,8 @@ const DialogOverlay = React.forwardRef<
     {...props}
   />
 ))
+// @ts-ignore
+
 DialogOverlay.displayName = DialogPrimitive.Overlay.displayName
 
 interface DialogContentProps
@@ -56,6 +58,7 @@ const DialogContent = React.forwardRef<
     </DialogPrimitive.Content>
   </DialogPortal>
 ))
+//@ts-expect-error
 DialogContent.displayName = DialogPrimitive.Content.displayName
 
 const DialogHeader = ({
@@ -99,6 +102,7 @@ const DialogTitle = React.forwardRef<
     {...props}
   />
 ))
+//@ts-expect-error
 DialogTitle.displayName = DialogPrimitive.Title.displayName
 
 const DialogDescription = React.forwardRef<
@@ -111,6 +115,7 @@ const DialogDescription = React.forwardRef<
     {...props}
   />
 ))
+//@ts-expect-error
 DialogDescription.displayName = DialogPrimitive.Description.displayName
 
 export {

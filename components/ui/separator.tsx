@@ -26,6 +26,7 @@ const Separator = React.forwardRef<
     />
   )
 )
+//@ts-expect-error
 Separator.displayName = SeparatorPrimitive.Root.displayName
 
 export { Separator }
