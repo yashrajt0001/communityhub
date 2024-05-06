@@ -37,7 +37,7 @@ export async function GET(
           conversationId: chatId,
         },
         include: {
-          member: {
+          Member: {
             include: {
               profile: true,
             }
@@ -54,7 +54,7 @@ export async function GET(
           conversationId: chatId,
         },
         include: {
-          member: {
+          Member: {
             include: {
               profile: true,
             }
