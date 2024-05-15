@@ -72,7 +72,7 @@ export default async function handler(
         conversationId: chatId as string,
       },
       include: {
-        member: {
+        Member: {
           include: {
             profile: true,
           }
@@ -104,7 +104,7 @@ export default async function handler(
           deleted: true,
         },
         include: {
-          member: {
+          Member: {
             include: {
               profile: true,
             }
@@ -126,7 +126,7 @@ export default async function handler(
           content,
         },
         include: {
-          member: {
+          Member: {
             include: {
               profile: true,
             }

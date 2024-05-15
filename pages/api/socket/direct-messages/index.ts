@@ -78,7 +78,7 @@ export default async function handler(
         memberId: member.id,
       },
       include: {
-        member: {
+        Member: {
           include: {
             profile: true,
           }
